@@ -1,0 +1,17 @@
+<h1>Stupid Coaching</h1>
+
+<% unless @question == '' %>
+
+<div class="card" id="question">
+  <p><%= @question %></p>
+  <p>- You</p>
+</div>
+
+<div class="card" id="answer">
+  <p><%= @answer %></p>
+  <p>- Your coach</p>
+</div>
+
+<%= link_to 'Ask another question', ask_path %>
+
+<% end %>
